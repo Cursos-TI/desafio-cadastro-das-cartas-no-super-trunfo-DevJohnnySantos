@@ -1,22 +1,53 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    char estado[2];
+    int codCarta;
+    char nomeCid[100];
+    int populacao;
+    float areaKm2;
+    float pib;
+    int pontoTuri;
+
+    printf("Informe os dados da prmeira carta\n");
+
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("informe o UF do estado: \n");
+    scanf("%s", estado);
+
+
+    printf("informe o codigo da carta!\n");
+    scanf("%d",&codCarta );
+
+    printf("informe o nome da cidade:\n");
+    scanf("%[^\n]s", nomeCid);
+
+    printf("informe a população da cidade:\n");
+    scanf("%d", &populacao);
+
+    printf("informe o Km2 do estado:\n");
+    scanf("%f", &areaKm2);
+
+    printf("informe o PIB do estado:\n");
+    scanf("%f", &pib);
+
+    printf("inforem quantos pontos turisticos:\n");
+    scanf("%d", &pontoTuri);
+
+    printf("\n--- Dados da Carta ---\n");
+    printf("Estado (UF): %s\n", estado);
+    printf("Codigo da Carta: %d\n", codCarta);
+    printf("Cidade: %s\n", nomeCid);
+    printf("Populacao: %d\n", populacao);
+    printf("Area em Km2: %.2f\n", areaKm2);
+    printf("PIB: %.2f\n", pib);
+    printf("Pontos Turisticos: %d\n", pontoTuri);
+
+
+
+
+  
 
     return 0;
 }
