@@ -79,7 +79,7 @@ int main() {
     pibPerCapita2 = pib2 / populacao2;
 
     
-    printf("Dados da Primeira Carta\n");
+    printf("---Dados da Primeira Carta---\n");
     printf("Estado (UF): %s\n", estado1);
     printf("Codigo da Carta: %s\n", codCarta1);
     printf("Cidade: %s\n", nomeCid1);
@@ -90,7 +90,7 @@ int main() {
     printf("PIB per Capita: %.2f\n", pibPerCapita1);
     printf("Pontos Turisticos: %d\n", pontoTuri1);
 
-    printf("Dados da Segunda Carta \n");
+    printf("---Dados da Segunda Carta--- \n");
     printf("Estado (UF): %s\n", estado2);
     printf("Codigo da Carta: %s\n", codCarta2);
     printf("Cidade: %s\n", nomeCid2);
